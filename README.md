@@ -1,3 +1,25 @@
+# Inspiration Hub
+
+## The purpose of your project
+
+To practice Redux and TypeScript with API.
+
+## Features
+
+### Weather
+
+Fetch the local weather - Users can check the current weather
+
+### Goals
+
+- Create goals
+- Mark goals as complete
+- Remove goals
+
+### Background Image
+
+Cycle through multiple fetched images
+
 ## Tech Stack
 
 - React
