@@ -7,7 +7,10 @@ function App() {
   const dispatch = useDispatch();
 
   return (
-    <>
+    <div 
+      className="bg-custom-pattern h-screen bg-cover bg-center" 
+      style={{ backgroundImage: "url('/src/assets/background_dummy.png')" }}
+    >
       <h1 className="text-4xl font-bold text-center">Vite + React</h1>
       <div className="card">
         <div className="flex flex-col items-center space-y-4">
@@ -22,7 +25,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+    </div>
   )
 }
 
