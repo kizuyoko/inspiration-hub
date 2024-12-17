@@ -26,6 +26,7 @@ Cycle through multiple fetched images
 - Redux
 - TypeScript
 - Tailwind
+- Vite
 
 ## How to Run the Project
 

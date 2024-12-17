@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-size: 20px;
+  }
+  h1,
+  h2,
+  h3,
+  input,
+  .temprature {
+    font-family: "Poppins", serif;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 24px;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  input {
+    font-weight: 600;
+    font-size: 32px;
+    background: transparent;
+  }
+}
+
+@layer components {
+  .box {
+    @apply bg-white bg-opacity-80 rounded-lg p-4 shadow;
+  }
+  .cols-parent {
+    @apply flex flex-col md:flex-row justify-between;
+  }
+  .cols-parent-h {
+    @apply flex flex-row justify-between;
+  }
+  .temprature {
+    @apply ml-2 text-right font-bold text-3xl;
+  }
+}
