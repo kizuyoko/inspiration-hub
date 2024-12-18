@@ -17,6 +17,7 @@ export const Button = (
           <a 
             href={href} 
             className={aClassName}
+            target="_blank"
           >
             <img 
               src={src}

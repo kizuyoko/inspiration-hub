@@ -1,9 +1,9 @@
 import { Button } from "../ui/Button"
 
-export const Goal = () => {
+export const Goal = ({ goal }: { goal: string }) => {
   return (
     <article className='box cols-parent-h'>
-      <p className='flex-1 mr-4'>Read a book</p>
+      <p className='flex-1 mr-4'>{goal}</p>
       <Button 
         onClick={()=>{}}
         imgClassName="w-6 mr-1"
