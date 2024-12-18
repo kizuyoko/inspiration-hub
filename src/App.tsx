@@ -8,10 +8,10 @@ function App() {
 
   return (
     <div 
-      className="bg-custom-pattern h-screen bg-cover bg-center" 
-      style={{ backgroundImage: "url('/src/assets/background_dummy.png')" }}
+      className="bg-custom-pattern h-screen bg-cover bg-center w-full" 
+      style={{ backgroundImage: "url('/src/assets/background_dummy4.jpg')" }}
     >
-      <section className='container relative p-4 mx-auto flex flex-col h-screen'>
+      <div className='container relative p-4 mx-auto flex flex-col h-screen'>
         <header className="cols-parent text-center md:text-left">
           <article className="box md:flex md:mr-4 mx-auto md:mx-0">
             <div className='flex flex-col'>
@@ -30,43 +30,106 @@ function App() {
           <article className="box hidden md:block max-w-52 text-center">
             <h3>Change Background Image</h3>
             <div className='cols-parent-h'>
+              <button>
                 <img 
                   src='/src/assets/arrow_l.svg'
                   alt='Previous'
                   className='w-7 h-7 flex'
                 />
+              </button>
+              <button>  
                 <img 
                   src='/src/assets/arrow_r.svg'
                   alt='Next'
                   className='w-7 h-7 flex'
                 />
+              </button>  
             </div>
           </article>
         </header>
         <main className='w-full'>
-          <section className='box my-3 cols-parent'>
+          <form className='box my-3 cols-parent'>
             <input 
               type='text'
               placeholder='Type Your Goal'
               className="focus:outline-none flex-1 text-center" 
             />
-            <button className="hidden md:block">
+            <button className="hidden md:block" type='submit'>
               <img 
                 src='/src/assets/arrow_d.svg'
                 alt='Next'
                 className='w-10 h-10 flex'
               />
             </button>
-          </section>
+          </form>
           <section className='cols-parent grid grid-cols-1 md:grid-cols-2 gap-4'>
-            <article className='box'>
-              aaa
+            <article className='box cols-parent-h'>
+              <p className='flex-1 mr-4'>Read a book</p>
+              <button>
+                <img 
+                  src='/src/assets/check.svg'
+                  alt='Check'
+                  className='w-6 mr-1'
+                />
+              </button>
+              <button>
+                <img 
+                  src='/src/assets/delete.svg'
+                  alt='Delete'
+                  className='w-6 h-6'
+                />
+              </button>
             </article>
-            <article className='box'>
-              bbb
+            <article className='box cols-parent-h'>
+              <p className='flex-1 mr-4'>Dentist</p>
+              <button>
+                <img 
+                  src='/src/assets/check.svg'
+                  alt='Check'
+                  className='w-6 mr-1'
+                />
+              </button>
+              <button>
+                <img 
+                  src='/src/assets/delete.svg'
+                  alt='Delete'
+                  className='w-6 h-6'
+                />
+              </button>
             </article>
-            <article className='box'>
-              ccc
+            <article className='box cols-parent-h'>
+              <p className='flex-1 mr-4'>Brush Teeth</p>
+              <button>
+                <img 
+                  src='/src/assets/check.svg'
+                  alt='Check'
+                  className='w-6 mr-1'
+                />
+              </button>
+              <button>
+                <img 
+                  src='/src/assets/delete.svg'
+                  alt='Delete'
+                  className='w-6 h-6'
+                />
+              </button>
+            </article>
+            <article className='box cols-parent-h'>
+              <p className='flex-1 mr-4'>Walking</p>
+              <button>
+                <img 
+                  src='/src/assets/check.svg'
+                  alt='Check'
+                  className='w-6 mr-1'
+                />
+              </button>
+              <button>
+                <img 
+                  src='/src/assets/delete.svg'
+                  alt='Delete'
+                  className='w-6 h-6'
+                />
+              </button>
             </article>
           </section>
         </main>
@@ -80,15 +143,63 @@ function App() {
             </div>
             <div className="cols-parent">
               <article className="box md:flex-1 md:mr-4">
-                <h1>jj</h1>
+                <p>All happiness depends on a leisurely breakfast. -  Joh Gunter</p>
               </article>
-              <article className="box hidden md:block">
-                <h2>Right</h2>
+              <article className="box hidden md:flex cols-parent-h">
+                <a href="https://github.com/kizuyoko/inspiration-hub" className="mr-2">
+                  <img 
+                    src='/src/assets/github.svg'
+                    alt='GitHub'
+                    className='w-6'
+                  />
+                </a>
+                <a href="https://github.com/kizuyoko/inspiration-hub">
+                  <img 
+                    src='/src/assets/linkedin.svg'
+                    alt='LinkedIn'
+                    className='w-6'
+                  />
+                </a>
+              </article>
+            </div>
+            <div className="cols-parent-h md:hidden my-4">
+              <article className="box md:mr-4 cols-parent-h">
+                <a href="https://github.com/kizuyoko/inspiration-hub">
+                  <img 
+                    src='/src/assets/arrow_l.svg'
+                    alt='Previous'
+                    className='w-6'
+                  />
+                </a>
+                <p className='flex-1 mx-2'>background</p>
+                <a href="https://github.com/kizuyoko/inspiration-hub">
+                  <img 
+                    src='/src/assets/arrow_r.svg'
+                    alt='Next'
+                    className='w-6'
+                  />
+                </a>
+              </article>
+              <article className="box cols-parent-h">
+                <a href="https://github.com/kizuyoko/inspiration-hub" className="mr-2">
+                  <img 
+                    src='/src/assets/github.svg'
+                    alt='GitHub'
+                    className='w-6'
+                  />
+                </a>
+                <a href="https://github.com/kizuyoko/inspiration-hub">
+                  <img 
+                    src='/src/assets/linkedin.svg'
+                    alt='LinkedIn'
+                    className='w-6'
+                  />
+                </a>
               </article>
             </div>
           </div>
         </footer>
-      </section>
+      </div>
     </div>
   )
 }
