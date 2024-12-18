@@ -8,17 +8,17 @@ function App() {
 
   return (
     <div 
-      className="bg-custom-pattern h-screen bg-cover bg-center w-full" 
-      style={{ backgroundImage: "url('/src/assets/background_dummy4.jpg')" }}
+      className="bg-custom-pattern md:h-screen bg-cover bg-center w-full" 
+      style={{ backgroundImage: "url('/background_dummy4.jpg')" }}
     >
-      <div className='container relative p-4 mx-auto flex flex-col h-screen'>
+      <div className='container relative p-4 mx-auto flex flex-col md:h-screen'>
         <header className="cols-parent text-center md:text-left">
           <article className="box md:flex md:mr-4 mx-auto md:mx-0">
             <div className='flex flex-col'>
               <h1 className="text-center md:text-left">Stockholm, SE</h1>
               <div className='flex items-center justify-center py-2'>
                 <img 
-                  src='/src/assets/sun.svg'
+                  src='/sun.svg'
                   alt='Sunny'
                   className='w-10'
                 />
@@ -32,14 +32,14 @@ function App() {
             <div className='cols-parent-h'>
               <button>
                 <img 
-                  src='/src/assets/arrow_l.svg'
+                  src='/arrow_l.svg'
                   alt='Previous'
                   className='w-7 h-7 flex'
                 />
               </button>
               <button>  
                 <img 
-                  src='/src/assets/arrow_r.svg'
+                  src='/arrow_r.svg'
                   alt='Next'
                   className='w-7 h-7 flex'
                 />
@@ -56,7 +56,7 @@ function App() {
             />
             <button className="hidden md:block" type='submit'>
               <img 
-                src='/src/assets/arrow_d.svg'
+                src='/arrow_d.svg'
                 alt='Next'
                 className='w-10 h-10 flex'
               />
@@ -67,14 +67,14 @@ function App() {
               <p className='flex-1 mr-4'>Read a book</p>
               <button>
                 <img 
-                  src='/src/assets/check.svg'
+                  src='/check.svg'
                   alt='Check'
                   className='w-6 mr-1'
                 />
               </button>
               <button>
                 <img 
-                  src='/src/assets/delete.svg'
+                  src='/delete.svg'
                   alt='Delete'
                   className='w-6 h-6'
                 />
@@ -84,14 +84,14 @@ function App() {
               <p className='flex-1 mr-4'>Dentist</p>
               <button>
                 <img 
-                  src='/src/assets/check.svg'
+                  src='/check.svg'
                   alt='Check'
                   className='w-6 mr-1'
                 />
               </button>
               <button>
                 <img 
-                  src='/src/assets/delete.svg'
+                  src='/delete.svg'
                   alt='Delete'
                   className='w-6 h-6'
                 />
@@ -101,14 +101,14 @@ function App() {
               <p className='flex-1 mr-4'>Brush Teeth</p>
               <button>
                 <img 
-                  src='/src/assets/check.svg'
+                  src='/check.svg'
                   alt='Check'
                   className='w-6 mr-1'
                 />
               </button>
               <button>
                 <img 
-                  src='/src/assets/delete.svg'
+                  src='/delete.svg'
                   alt='Delete'
                   className='w-6 h-6'
                 />
@@ -118,14 +118,14 @@ function App() {
               <p className='flex-1 mr-4'>Walking</p>
               <button>
                 <img 
-                  src='/src/assets/check.svg'
+                  src='/check.svg'
                   alt='Check'
                   className='w-6 mr-1'
                 />
               </button>
               <button>
                 <img 
-                  src='/src/assets/delete.svg'
+                  src='/delete.svg'
                   alt='Delete'
                   className='w-6 h-6'
                 />
@@ -148,14 +148,14 @@ function App() {
               <article className="box hidden md:flex cols-parent-h">
                 <a href="https://github.com/kizuyoko/inspiration-hub" className="mr-2">
                   <img 
-                    src='/src/assets/github.svg'
+                    src='/github.svg'
                     alt='GitHub'
                     className='w-6'
                   />
                 </a>
                 <a href="https://github.com/kizuyoko/inspiration-hub">
                   <img 
-                    src='/src/assets/linkedin.svg'
+                    src='/linkedin.svg'
                     alt='LinkedIn'
                     className='w-6'
                   />
@@ -166,7 +166,7 @@ function App() {
               <article className="box md:mr-4 cols-parent-h">
                 <a href="https://github.com/kizuyoko/inspiration-hub">
                   <img 
-                    src='/src/assets/arrow_l.svg'
+                    src='/arrow_l.svg'
                     alt='Previous'
                     className='w-6'
                   />
@@ -174,7 +174,7 @@ function App() {
                 <p className='flex-1 mx-2'>background</p>
                 <a href="https://github.com/kizuyoko/inspiration-hub">
                   <img 
-                    src='/src/assets/arrow_r.svg'
+                    src='/arrow_r.svg'
                     alt='Next'
                     className='w-6'
                   />
@@ -183,14 +183,14 @@ function App() {
               <article className="box cols-parent-h">
                 <a href="https://github.com/kizuyoko/inspiration-hub" className="mr-2">
                   <img 
-                    src='/src/assets/github.svg'
+                    src='/github.svg'
                     alt='GitHub'
                     className='w-6'
                   />
                 </a>
                 <a href="https://github.com/kizuyoko/inspiration-hub">
                   <img 
-                    src='/src/assets/linkedin.svg'
+                    src='/linkedin.svg'
                     alt='LinkedIn'
                     className='w-6'
                   />
