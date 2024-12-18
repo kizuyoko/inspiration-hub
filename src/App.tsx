@@ -171,7 +171,8 @@ function App() {
                     className='w-6'
                   />
                 </a>
-                <p className='flex-1 mx-2'>background</p>
+                <p className='xs:hidden mx-2'>Bg</p>
+                <p className="hidden xs:block mx-2">Background</p>
                 <a href="https://github.com/kizuyoko/inspiration-hub">
                   <img 
                     src='/arrow_r.svg'

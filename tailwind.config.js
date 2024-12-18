@@ -8,6 +8,9 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"Source Sans 3"', 'sans-serif']
+      },
+      screens: {
+        'xs': '350px'
       }
     },
   },
