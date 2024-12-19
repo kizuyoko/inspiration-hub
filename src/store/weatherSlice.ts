@@ -3,7 +3,6 @@ import axios from 'axios';
 import { getCurrentLocation } from '../utils/getCurrentLocation';
 
 const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
-console.log('API Key:', apiKey); 
 
 export const fetchWeather = createAsyncThunk('weather/fetchWeather', async () => {
   const { latitude, longitude } = await getCurrentLocation();
