@@ -7,7 +7,6 @@ const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 export const fetchWeather = createAsyncThunk('weather/fetchWeather', async () => {
   const { latitude, longitude } = await getCurrentLocation();
   const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${latitude},${longitude}`;
-  console.log('Weather API URL:', url);
   const response = await axios.get(url);
   return response.data;
 });
