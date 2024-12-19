@@ -8,7 +8,7 @@ export const quotes = [
     author: 'Franklin D. Roosevelt'
   },
   {
-    quote: 'Life is what happens when you’re busy making other plans.',
+    quote: "Life is what happens when you're busy making other plans.",
     author: 'John Lennon'
   },
   {
@@ -20,7 +20,7 @@ export const quotes = [
     author: 'Brian Tracy'
   },
   {
-    quote: 'Believe you can and you’re halfway there.',
+    quote: "Believe you can and you're halfway there.",
     author: 'Theodore Roosevelt'
   },
   {
@@ -32,7 +32,7 @@ export const quotes = [
     author: 'Helen Keller'
   },
   {
-    quote: 'In the end, we only regret the chances we didn’t take.',
+    quote: "In the end, we only regret the chances we didn't take.",
     author: 'Lewis Carroll'
   },
   {
@@ -40,7 +40,7 @@ export const quotes = [
     author: 'Peter Drucker'
   },
   {
-    quote: 'You miss 100% of the shots you don’t take.',
+    quote: "You miss 100% of the shots you don't take.",
     author: 'Wayne Gretzky'
   },
   {

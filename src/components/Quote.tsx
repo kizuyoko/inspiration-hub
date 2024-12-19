@@ -6,7 +6,7 @@ export const Quote = () => {
 
   return (
     <article className="box md:flex-1 md:mr-4">
-      <p>"{randomQuote.quote}" by {randomQuote.author}  </p>
+      <p>"{randomQuote.quote}" - by {randomQuote.author}  </p>
     </article>
   );
 }

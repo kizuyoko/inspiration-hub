@@ -7,13 +7,13 @@ export const SocialMedia = () => {
         href="https://github.com/kizuyoko/inspiration-hub" 
         src='/github.svg'
         alt='GitHub'
-        imgClassName='w-6 mr-2'
+        imgClassName='w-7 mr-2'
       />
       <Button 
         href="https://www.linkedin.com/in/kizuyoko/" 
         src='/linkedin.svg'
         alt='LinkedIn'
-        imgClassName='w-6'
+        imgClassName='w-7'
       />
     </article>   
   );
