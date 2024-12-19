@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import type { AppDispatch } from './store/store';
 import { useEffect } from 'react';
 import { fetchRandomQuote } from './store/quoteSlice';
@@ -32,7 +32,7 @@ function App() {
           <Goals />
         </main>
         <footer className="mt-auto">
-          <div className="card">
+          <div className="mt-4">
             <div className="cols-parent">
               <Quote />
               <div className='hidden md:block'>
