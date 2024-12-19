@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import exampleReducer from './exampelSlice';
 import quoteReducer from './quoteSlice';
+import weatherReducer from './weatherSlice';
 
 const store = configureStore({
   reducer: {
-    example: exampleReducer,
     quote: quoteReducer,
+    weather: weatherReducer,
   },
 });
 
