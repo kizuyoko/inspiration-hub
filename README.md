@@ -9,6 +9,7 @@ To practice Redux and TypeScript with API.
 ### Weather
 
 Fetch the local weather - Users can check the current weather
+API: [Weather API](https://www.weatherapi.com/)
 
 ### Goals
 
@@ -21,7 +22,7 @@ Fetch the local weather - Users can check the current weather
 Cycle through multiple fetched images
 
 ### Quote
-Show a random quote via [DummyJSON](https://dummyjson.com/docs/quotes).
+Random quote via [DummyJSON](https://dummyjson.com/docs/quotes).
 
 ## Tech Stack
 
