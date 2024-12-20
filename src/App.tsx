@@ -1,7 +1,3 @@
-import { useDispatch } from 'react-redux';
-import type { AppDispatch } from './store/store';
-import { useEffect } from 'react';
-import { fetchRandomQuote } from './store/quoteSlice';
 import { BackgroundImage } from './components/BackgroundImage';
 import { Weather } from './components/Weather';
 import { BackgroundControlDt } from './components/BackgroundControlDt';
@@ -12,13 +8,6 @@ import { BackgroundControlMb } from './components/BackgroundControlMb';
 import { SocialMedia } from './components/SocialMedia';
 
 function App() {
-  const quoteDispatch: AppDispatch = useDispatch();
-  //const dispatch = useDispatch();
-  
-  useEffect(() => {
-    quoteDispatch(fetchRandomQuote());
-  }, [quoteDispatch]);
-
   return (
     <>
       <BackgroundImage />

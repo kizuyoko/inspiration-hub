@@ -2,12 +2,10 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { getCurrentLocation } from '../utils/getCurrentLocation';
 
-//const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 const apiKey = import.meta.env.VITE_WEATHER_API_KEY_OPENWEATHER;
 
 export const fetchWeather = createAsyncThunk('weather/fetchWeather', async () => {
   const { latitude, longitude } = await getCurrentLocation();
-  //const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${latitude},${longitude}`;
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
   const response = await axios.get(url);
   return {
