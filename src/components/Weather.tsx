@@ -5,7 +5,7 @@ import { fetchWeather } from '../store/weatherSlice';
 import { RootState } from '../store/store';
 
 export const Weather = () => {
-  const dispatch = useDispatch<AppDispatch>();
+  const dispatch: AppDispatch = useDispatch();
   const weather = useSelector((state: RootState) => state.weather.weather) as {
     location: {
       name: string;
@@ -39,15 +39,15 @@ export const Weather = () => {
       {weather && (
         <div className='flex flex-col'>
           <h1 className="text-center md:text-left">{weather.location.name}, {weather.location.country}</h1>
-          <div className='flex items-center justify-center py-2 md:items-start md:justify-start'>
+          <div className='flex items-center md:justify-start'>
             <img 
-              src={weather.current.condition.icon}
+              src={`http://openweathermap.org/img/wn/${weather.current.condition.icon}@2x.png`} 
               alt={weather.current.condition.text}
-              className='w-10'
+              className='w-14'
             />
-            <p className='ml-6 temprature'>{weather.current.temp_c} °C</p>
+            <p className='ml-2 temperature'>{Math.round(weather.current.temp_c)} °C</p>
           </div>
-          <p>{weather.current.condition.text}</p>
+          <p>{weather.current.condition.text} </p>
         </div>
       )}
     </article>

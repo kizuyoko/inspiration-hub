@@ -9,7 +9,7 @@ To practice Redux and TypeScript with API.
 ### Weather
 
 Fetch the local weather - Users can check the current weather
-API: [Weather API](https://www.weatherapi.com/)
+API: [Open Weather](https://openweathermap.org/api)
 
 ### Goals
 
@@ -22,6 +22,7 @@ API: [Weather API](https://www.weatherapi.com/)
 Cycle through multiple fetched images
 
 ### Quote
+
 Random quote via [DummyJSON](https://dummyjson.com/docs/quotes).
 
 ## Tech Stack
