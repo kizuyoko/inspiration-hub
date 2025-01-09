@@ -47,7 +47,7 @@ export const Weather = () => {
             />
             <p className='ml-2 temperature'>{Math.round(weather.current.temp_c)} °C</p>
           </div>
-          <p>{weather.current.condition.text} </p>
+          <p>{weather.current.condition.text.charAt(0).toUpperCase() + weather.current.condition.text.slice(1)}</p>
         </div>
       )}
     </article>

@@ -23,7 +23,6 @@ export const fetchWeather = createAsyncThunk('weather/fetchWeather', async () =>
   };
 });
 
-// Add this interface above the slice
 interface WeatherState {
   weather: {
     location: {

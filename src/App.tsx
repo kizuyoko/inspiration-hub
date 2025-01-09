@@ -7,7 +7,18 @@ import { Quote } from './components/Quote';
 import { BackgroundControlMb } from './components/BackgroundControlMb';
 import { SocialMedia } from './components/SocialMedia';
 
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchBackgrounds } from './store/backgroundSlice';
+import { AppDispatch } from './store/store';
+
 function App() {
+  const dispatch: AppDispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchBackgrounds());
+  }, [dispatch]);
+
+  
   return (
     <>
       <BackgroundImage />
