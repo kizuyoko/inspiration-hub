@@ -17,6 +17,7 @@ export const GoalForm = () => {
       onToggleCompletion: () => {},
     }
     dispatch(addGoal(goal));
+    target[0].value = '';
   };
 
   return (

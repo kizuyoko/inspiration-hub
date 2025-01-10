@@ -8,7 +8,7 @@ export const GoalLists = () => {
   return (
     <>
       {goals?.length > 0 && (
-        <section className='grid grid-cols-1 gap-4 pt-4 mt-4 border-t cols-parent md:grid-cols-2'>
+        <section className='grid grid-cols-1 gap-4 cols-parent md:grid-cols-2'>
           <GoalsToDo /> 
           <GoalsDone />
         </section>
