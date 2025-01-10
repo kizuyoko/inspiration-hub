@@ -4,7 +4,7 @@ import axios from 'axios';
 const apiKey = import.meta.env.VITE_BACKGROUNDIMAGE_API_KEY_UNSPLASH;
 
 export const fetchBackgrounds = createAsyncThunk('background/fetchBackgrounds', async () => {
-  const query = 'nature';
+  const query = 'landscape';
   const url = `https://api.unsplash.com/search/photos?query=${query}&client_id=${apiKey}`;
   // example: https://api.unsplash.com/search/photos?query=nature&client_id=D5TqvxAXZ2_swRnP7lfczdZMkQRrIDUOTIEvRU1lDck
 

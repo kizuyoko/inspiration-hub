@@ -37,15 +37,15 @@ export const Weather = () => {
   return (
     <article className="mx-auto box md:flex md:mr-4 md:mx-0">
       {weather && (
-        <div className='flex flex-col'>
-          <h1 className="text-center md:text-left">{weather.location.name}, {weather.location.country}</h1>
-          <div className='flex items-center md:justify-start'>
+        <div className='flex flex-col items-center'>
+          <h1 className="text-center">{weather.location.name}, {weather.location.country}</h1>
+          <div className='flex'>
+            <p className='temperature'>{Math.round(weather.current.temp_c)} °C</p>
             <img 
               src={`http://openweathermap.org/img/wn/${weather.current.condition.icon}@2x.png`} 
               alt={weather.current.condition.text}
               className='w-14'
-            />
-            <p className='ml-2 temperature'>{Math.round(weather.current.temp_c)} °C</p>
+            /> 
           </div>
           <p>{weather.current.condition.text.charAt(0).toUpperCase() + weather.current.condition.text.slice(1)}</p>
         </div>
