@@ -20,6 +20,7 @@ API: [Open Weather](https://openweathermap.org/api)
 ### Background Image
 
 Cycle through multiple fetched images
+API: [Unsplash](https://unsplash.com/developers)
 
 ### Quote
 
@@ -41,7 +42,8 @@ npm run dev
 
 ## Demo
 
-[Demo is here](https://inspiration-hub-three.vercel.app)
+[Demo in Vercel](https://inspiration-hub-three.vercel.app)
+[Demo in Netlify](https://inspiration-hub-yoko.netlify.app/)
 
 ## Figma
 
