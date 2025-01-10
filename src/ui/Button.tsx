@@ -16,7 +16,7 @@ export const Button = (
         href ? (
           <a 
             href={href} 
-            className={aClassName}
+            className={`${aClassName} hover:opacity-60`}
             target="_blank"
           >
             <img 
@@ -30,7 +30,7 @@ export const Button = (
           <button 
             onClick={onClick} 
             type={type} 
-            className={buttonClassName}
+            className={`${buttonClassName} hover:opacity-60`}
           >
             <img 
               src={src}
