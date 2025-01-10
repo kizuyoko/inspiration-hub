@@ -41,4 +41,7 @@
   .temperature {
     @apply pt-3 font-bold text-3xl pl-6 pr-2;
   }
+  .complete {
+    @apply bg-opacity-60 text-gray-500
+  }
 }
