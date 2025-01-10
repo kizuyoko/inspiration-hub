@@ -11,6 +11,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchBackgrounds } from './store/backgroundSlice';
 import { AppDispatch } from './store/store';
+import { GoalLists } from './components/GoalLists';
 
 function App() {
   const dispatch: AppDispatch = useDispatch();
@@ -30,6 +31,7 @@ function App() {
         <main className='w-full'>
           <GoalForm />
           <Goals />
+          <GoalLists />
         </main>
         <footer className="mt-auto">
           <div className="mt-4">
