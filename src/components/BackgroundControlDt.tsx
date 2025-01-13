@@ -36,7 +36,7 @@ export const BackgroundControlDt = () => {
           className='flex my-3 border border-gray-500 rounded-md'>
           <input 
             type='text'
-            placeholder='Keyword ex.landscape'
+            placeholder='Keyword ex. landscape'
             className="flex-1 w-48 p-2 text-sm font-normal text-center focus:outline-none"
           />
           <Button 
