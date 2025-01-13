@@ -37,11 +37,11 @@ export const BackgroundControlMb = () => {
       />
       <form
         onSubmit={handleKeyword} 
-        className='flex p-2 border border-gray-500 rounded-md'>
+        className='flex w-full p-2 ml-2 border border-gray-500 rounded-md'>
         <input 
           type='text'
           placeholder='Keyword'
-          className="flex-1 text-sm font-normal text-center focus:outline-none"
+          className="flex-1 w-full text-sm font-normal text-center focus:outline-none"
         />
         <Button 
           type='submit'
