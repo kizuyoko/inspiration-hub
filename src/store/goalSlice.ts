@@ -5,8 +5,6 @@ interface GoalType {
   id: string;
   text: string
   status: 'incomplete' | 'complete';
-  onRemove: () => void;
-  onToggleCompletion: () => void;
 }
 
 interface GoalsState {
@@ -14,11 +12,7 @@ interface GoalsState {
 }
 
 const initialState: GoalsState = {
-  goals: goals.map(goal => ({
-    ...goal,
-    onRemove: () => {},
-    onToggleCompletion: () => {},
-  })),
+  goals,
 };
 
 const goalSlice = createSlice({

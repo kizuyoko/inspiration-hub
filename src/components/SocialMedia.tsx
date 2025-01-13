@@ -2,7 +2,7 @@ import { Button } from "../ui/Button";
 
 export const SocialMedia = () => {
   return (
-    <article className="box cols-parent-h">
+    <article className="mt-2 md:mt-0 max-w-24 box cols-parent-h">
       <Button 
         href="https://github.com/kizuyoko/inspiration-hub" 
         src='/github.svg'

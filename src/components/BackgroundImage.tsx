@@ -7,7 +7,7 @@ export const BackgroundImage = () => {
   const currentBackground = backgrounds[currentIndex];
 
   return (
-    <aside className='fixed w-full h-screen overflow-hidden'>
+    <aside className='fixed z-0 w-full h-screen overflow-hidden'>
       {currentBackground && (
         <img 
           src={currentBackground.url} 

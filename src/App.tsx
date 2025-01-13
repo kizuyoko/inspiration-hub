@@ -19,9 +19,11 @@ function App() {
   const [ sorted, setSorted ] = useState(false);
 
   const dispatch: AppDispatch = useDispatch();
+  const query = useSelector((state: RootState) => state.background.query);
+  
   useEffect(() => {
-    dispatch(fetchBackgrounds());
-  }, [dispatch]);
+    dispatch(fetchBackgrounds(query));
+  }, [dispatch, query]);
 
   const toggleSetting = () => {
     setSorted(!sorted);
@@ -57,13 +59,13 @@ function App() {
         </main>
         <footer className="mt-auto">
           <div className="mt-4">
-            <div className="cols-parent">
+            <div className="justify-end cols-parent md:justify-between">
               <Quote />
-              <div className='hidden md:block'>
+              <div className='hidden md:flex md:flex-col md:justify-end'>
                 <SocialMedia />
               </div>
             </div>
-            <div className="my-4 cols-parent-h md:hidden">
+            <div className="flex flex-col items-center my-4 md:hidden">
               <BackgroundControlMb />
               <SocialMedia />
             </div>

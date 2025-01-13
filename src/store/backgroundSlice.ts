@@ -1,13 +1,10 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const apiKey = import.meta.env.VITE_BACKGROUNDIMAGE_API_KEY_UNSPLASH;
 
-export const fetchBackgrounds = createAsyncThunk('background/fetchBackgrounds', async () => {
-  const query = 'landscape';
+export const fetchBackgrounds = createAsyncThunk('background/fetchBackgrounds', async (query: string) => {
   const url = `https://api.unsplash.com/search/photos?query=${query}&client_id=${apiKey}`;
-  // example: https://api.unsplash.com/search/photos?query=nature&client_id=D5TqvxAXZ2_swRnP7lfczdZMkQRrIDUOTIEvRU1lDck
-
   const response = await axios.get(url);
 
   return response.data.results.map((result: any) => ({
@@ -21,23 +18,28 @@ interface BackgroundState {
     id: string;
     url: string;
   }[];
+  query: string;
   status: 'idle' | 'loading' | 'succeeded' | 'failed';
   error: string | null;
   currentIndex: number;
-  
 }
+const initialState: BackgroundState = {
+  backgrounds: [],
+  currentIndex: 0,
+  query: 'landscape',
+  status: 'idle',
+  error: null,
+};
 
 const backgroundSlice = createSlice({
   name: 'background',
-  initialState: {
-    backgrounds: [],
-    currentIndex: 0,
-    status: 'idle',
-    error: null,
-  } as BackgroundState,
+  initialState,
   reducers: {
     setCurrentIndex: (state, action) => {
       state.currentIndex = action.payload;
+    },
+    setQuery(state, action: PayloadAction<string>) {
+      state.query = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -52,7 +54,7 @@ const backgroundSlice = createSlice({
   },
 });
 
-export const { setCurrentIndex } = backgroundSlice.actions;
+export const { setCurrentIndex, setQuery } = backgroundSlice.actions;
 
 export default backgroundSlice.reducer;
 
